@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&family=Numans&family=Odor+Mean+Chey&family=Poppins:ital,wght@1,700&display=swap");
+body {
+  background: #1C1C1C;
+  flex-direction: column;
+  display: flex;
+}
+body .divPrinc {
+  background-color: #000000;
+  position: relative;
+  flex-direction: row;
+  height: 100px;
+  margin: -8px;
+}
+body .divPrinc .adminIcon {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  left: 1515px;
+  top: 25px;
+}
+body .divPrinc .goalStore {
+  position: relative;
+  width: 458px;
+  left: 58px;
+  bottom: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 104px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+body .divPrinc .admin {
+  position: relative;
+  text-align: end;
+  color: #FFFFFF;
+  bottom: 150px;
+  right: 175px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+}
+body .divSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -6px;
+  background-color: rgba(192, 192, 192, 0.9176470588);
+}
+body .divSec h1 {
+  position: absolute;
+  left: 60px;
+  top: 120px;
+  font-family: "Numans";
+  font-size: 35px;
+}
+body .divSec .botoes {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  height: 772px;
+  width: 1915px;
+  margin-top: 15px;
+  margin-left: -5px;
+  background-color: rgba(192, 192, 192, 0.9176470588);
+}
+body .divSec .botoes label {
+  font-family: "Numans";
+  font-size: 20px;
+  font-weight: 600;
+}
+body .divSec .botoes .divNome {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+}
+body .divSec .botoes .divNome .nomeBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -8px;
+  width: 600px;
+  height: 195%;
+  left: 11px;
+  border-radius: 2%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+}
+body .divSec .botoes .divDescricao {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+body .divSec .botoes .divDescricao .descricaoBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -5px;
+  left: 2px;
+  width: 600px;
+  height: 195%;
+  border-radius: 2%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+}
+body .divSec .botoes .divImagem {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+body .divSec .botoes .divImagem .imagemBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -5px;
+  left: 5px;
+  width: 600px;
+  height: 195%;
+  border-radius: 2%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+}
+body .divSec .botoes .divPreco {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+  gap: 60px;
+}
+body .divSec .botoes .divPreco .precoBtn {
+  position: relative;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  top: -5px;
+  width: 600px;
+  height: 195%;
+  border-radius: 2%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+}
+body .divSec .botoes .divCategoria {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+body .divSec .botoes .divCategoria .categoriaBtn {
+  position: relative;
+  width: 600px;
+  height: 195%;
+  top: -5px;
+  border-radius: 2%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+}
+body .divSec .botoes .botoesSalvar {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+body .divSec .botoes .botoesSalvar .salvar {
+  background: #37C23D;
+  border-radius: 40px;
+  position: relative;
+  width: 180px;
+  height: 37px;
+  left: 70px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+body .divSec .botoes .botoesSalvar .cancelar {
+  background: #D81A1A;
+  border-radius: 40px;
+  position: relative;
+  width: 130px;
+  height: 37px;
+  left: 70px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+body .rodape {
+  width: 1919px;
+  height: 88px;
+  margin-left: -7px;
+  background-color: #000000;
+  color: white;
+}
+body .rodape h1 {
+  width: 100px;
+  position: relative;
+  left: 100px;
+}
+
+@media only screen and (max-width: 720px) {
+  body .divPrinc {
+    height: 70px;
+  }
+  body .divPrinc .adminIcon {
+    width: 45px;
+    height: 45px;
+    left: 550px;
+    top: 15px;
+  }
+  body .divPrinc .goalStore {
+    width: 230px;
+    left: 30px;
+    bottom: 40px;
+    font-size: 40px;
+  }
+  body .divPrinc .admin {
+    bottom: 140px;
+    right: 15px;
+    font-size: 30px;
+  }
+  body .divSec h1 {
+    left: 35px;
+    top: 80px;
+    font-size: 30px;
+  }
+  body .divSec .botoes {
+    height: 672px;
+  }
+  body .divSec .botoes label {
+    font-size: 15px;
+  }
+  body .divSec .botoes .divNome .nomeBtn {
+    width: 400px;
+    height: 155%;
+  }
+  body .divSec .botoes .divDescricao .descricaoBtn {
+    width: 400px;
+    height: 155%;
+  }
+  body .divSec .botoes .divImagem .imagemBtn {
+    width: 400px;
+    height: 155%;
+  }
+  body .divSec .botoes .divPreco .precoBtn {
+    width: 400px;
+    height: 155%;
+  }
+  body .divSec .botoes .divCategoria .categoriaBtn {
+    left: 6px;
+    width: 400px;
+    height: 155%;
+  }
+  body .divSec .botoes .botoesSalvar {
+    margin-top: 20px;
+  }
+  body .divSec .botoes .botoesSalvar .salvar {
+    width: 160px;
+    height: 30px;
+    font-size: 15px;
+  }
+  body .divSec .botoes .botoesSalvar .cancelar {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+  body .rodape {
+    width: 719px;
+    height: 78px;
+  }
+  body .rodape h1 {
+    top: 1px;
+    font-size: 30px;
+    left: 40px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body .divPrinc {
+    height: 70px;
+  }
+  body .divPrinc .adminIcon {
+    width: 35px;
+    height: 35px;
+    left: 290px;
+    top: 17px;
+  }
+  body .divPrinc .goalStore {
+    width: 170px;
+    left: 15px;
+    bottom: 35px;
+    font-size: 30px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+  body .divPrinc .admin {
+    bottom: 125px;
+    right: 10px;
+    font-size: 25px;
+  }
+  body .divSec h1 {
+    left: 20px;
+    top: 90px;
+    font-size: 20px;
+  }
+  body .divSec .botoes {
+    height: 698px;
+  }
+  body .divSec .botoes label {
+    font-size: 15px;
+  }
+  body .divSec .botoes .divNome .nomeBtn {
+    left: 10px;
+    width: 210px;
+    height: 125%;
+  }
+  body .divSec .botoes .divDescricao .descricaoBtn {
+    left: 6px;
+    width: 210px;
+    height: 125%;
+  }
+  body .divSec .botoes .divImagem .imagemBtn {
+    width: 210px;
+    height: 125%;
+  }
+  body .divSec .botoes .divPreco .precoBtn {
+    width: 210px;
+    height: 125%;
+  }
+  body .divSec .botoes .divCategoria .categoriaBtn {
+    left: 4px;
+    width: 210px;
+    height: 125%;
+  }
+  body .divSec .botoes .botoesSalvar {
+    margin-top: 15px;
+  }
+  body .divSec .botoes .botoesSalvar .salvar {
+    left: 30px;
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+  }
+  body .divSec .botoes .botoesSalvar .cancelar {
+    left: 30px;
+    width: 90px;
+    height: 30px;
+    font-size: 12px;
+  }
+  body .rodape {
+    width: 419px;
+    height: 82px;
+    margin-top: -30px;
+  }
+  body .rodape h1 {
+    font-size: 25px;
+    left: 20px;
+    top: 5px;
+  }
+}/*# sourceMappingURL=index.css.map */

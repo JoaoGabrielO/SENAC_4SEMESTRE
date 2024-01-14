@@ -1,0 +1,279 @@
+
+############################## 1 PASSO ############################## 
+create database senac2303;
+use senac2303;
+
+CREATE TABLE tb_filme (
+	id_filme		int primary key auto_increment,
+    nm_filme		varchar(200),
+    ds_sinopse		varchar(4000),
+    vl_avaliacao	decimal(15,2),
+    dt_lancamento	date,
+    bt_disponivel	boolean,
+    img_filme       varchar(800)
+);
+
+
+
+############################## 2 PASSO ############################## 
+
+NO PROMPT DE COMANDO NO VSCODE
+
+npm init -y
+npm i cors express nodemon dotenv mysql2
+
+
+########################
+
+  - /node_modules
+  - /src
+  - /controller
+  - /repository
+  - index.js
+- .env
+- package.json
+
+############################## 2 PASSO ############################## 
+
+SRC
+ -INDEX.JS
+  
+import 'dotenv/config';
+import express from 'express';
+import cors from 'cors';
+
+import filmeController from './controller/filmeController.js';
+
+const servidor = express();
+servidor.use(cors());
+servidor.use(express.json());
+
+
+servidor.use(filmeController); 
+
+
+
+const port = process.env.PORT;
+servidor.listen(port, () => console.log(`API subiu na porta ${port}`));
+
+############################## 3 PASSO ############################## 
+
+Controller
+	-cadastroController.js
+
+import { buscarPorNome, listar, remover, salvar } from "../repository/filmeRepository.js";
+
+import { Router } from "express";
+const endpoints = Router();
+
+
+endpoints.post('/filme', async (req, resp) => {
+  try {
+    let filme = req.body;
+
+    if (!filme.nome)
+      throw new Error('Nome do filme é obrigatório!');
+
+    if (isNaN(filme.avaliacao) || filme.avaliacao > 10 || filme.avaliacao < 0)
+      throw new Error('Avaliação inválida!');
+
+    // outras validações
+
+    let r = await salvar(filme);
+
+    resp.send(r);
+  }
+  catch (err) {
+    resp.status(400).send({
+      erro: err.message
+    })
+  }
+});
+
+
+endpoints.get('/filme', async (req, resp) => {
+  try {
+    let r = await listar();
+    resp.send(r);
+  }
+  catch (err) {
+    resp.status(400).send({
+      erro: err.message
+    })
+  }
+})
+
+
+
+
+endpoints.get('/filme/busca', async (req, resp) => {
+  try {
+    let nome = req.query.nome;
+    let r = await buscarPorNome(nome);
+    resp.send(r);
+  }
+  catch (err) {
+    resp.status(400).send({
+      erro: err.message
+    })
+  }
+})
+
+
+
+endpoints.delete('/filme/:id', async (req, resp) => {
+  try {
+    let id = req.params.id;
+    let linhasAfetadas = await remover(id);
+    
+    if (linhasAfetadas == 0)
+      throw new Error('Filme não encontrado!');
+
+    resp.send();
+  }
+  catch (err) {
+    resp.status(400).send({
+      erro: err.message
+    })
+  }
+})
+
+
+export default endpoints;
+
+
+
+
+############################## 4 PASSO ############################## 
+
+REPOSITORY
+	-CONNECTION.JS
+
+import mysql2 from 'mysql2/promise';
+
+
+const con = await mysql2.createConnection({
+  host: process.env.HOST,
+  database: process.env.DB,
+  user: process.env.USER,
+  password: process.env.PWD
+})
+
+
+console.log('Conexão com BD realizada.');
+
+
+export { con };
+
+
+############################## 5 PASSO ############################## 
+
+REPOSITORY
+ - cadastroRepository
+ 
+import { con } from "./connection.js";
+
+
+export async function salvar(filme) {
+  const comando = `
+      INSERT INTO tb_filme (nm_filme, ds_sinopse, vl_avaliacao, dt_lancamento, bt_disponivel)
+                    VALUES (?, ?, ?, ?, ?)
+  `
+
+  const [info] = await con.query(comando, [filme.nome, filme.sinopse, filme.avaliacao, filme.lancamento, filme.disponivel])
+  filme.id = info.insertId;
+  
+  return filme;
+}
+
+export async function listar() {
+  const comando = `
+     SELECT id_filme        as id,
+            nm_filme        as nome,
+            ds_sinopse      as sinopse,
+            vl_avaliacao    as avaliacao,
+            dt_lancamento   as lancamento,
+            bt_disponivel   as disponivel,
+            img_filme       as imagem
+       FROM tb_filme
+  `
+
+  const [linhas] = await con.query(comando);
+  return linhas;
+}
+
+
+export async function buscarPorNome(nome) {
+  const comando = `
+     SELECT id_filme        as id,
+            nm_filme        as nome,
+            ds_sinopse      as sinopse,
+            vl_avaliacao    as avaliacao,
+            dt_lancamento   as lancamento,
+            bt_disponivel   as disponivel,
+            img_filme       as imagem
+       FROM tb_filme
+      WHERE nm_filme like ?
+  `
+
+  const [linhas] = await con.query(comando, ['%'+nome+'%']);
+  return linhas;
+}
+
+
+export function alterar(id, filme) {
+
+}
+
+
+export async function remover(id) {
+  const comando = 'DELETE FROM tb_filme WHERE id_filme = ?'
+
+  const [info] = await con.query(comando, [id])
+  return info.affectedRows;
+}
+
+
+
+
+########################
+
+
+
+
+
+INSERT INTO tb_filme (nm_filme, ds_filme, ds_sinopse, vl_avaliacao, dt_lancamento, bt_disponivel)
+	          VALUES (?, ?, ?, ?, ?, ?);
+
+
+SELECT id_filme,
+	   nm_filme,
+       ds_sinopse,
+       vl_avaliacao,
+       dt_lancamento,
+       bt_disponivel,
+       img_filme
+  FROM tb_filme;
+
+
+
+UPDATE tb_filme
+   SET nm_filme = ?,
+       ds_sinopse = ?,
+       vl_avaliacao = ?,
+       dt_lancamento = ?,
+       bt_disponivel = ?
+ WHERE id_filme = ?;
+
+
+
+DELETE FROM tb_filme WHERE id_filme = ?;
+
+
+
+
+
+
+
+
+

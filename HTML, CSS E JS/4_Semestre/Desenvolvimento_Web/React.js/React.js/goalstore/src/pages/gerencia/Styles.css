@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&family=Numans&family=Odor+Mean+Chey&family=Poppins:ital,wght@1,700&display=swap");
+.gerencia {
+  background: #1C1C1C;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+.gerencia .divPrinc {
+  background-color: #000000;
+  position: relative;
+  flex-direction: row;
+  height: 100px;
+  margin: -8px;
+  width: 1928px;
+}
+.gerencia .divPrinc .adminIcon {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 1705px;
+  top: 30px;
+}
+.gerencia .divPrinc .goalStore {
+  position: relative;
+  width: 458px;
+  left: 58px;
+  bottom: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 104px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+.gerencia .divPrinc .admin {
+  position: relative;
+  text-align: end;
+  color: #FFFFFF;
+  bottom: 140px;
+  right: 60px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.gerencia .divPrinc .estoque {
+  position: relative;
+  background-color: #000000;
+  color: #FFFFFF;
+  bottom: 250px;
+  width: 150px;
+  left: 1550px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.gerencia .divPrinc .gerencia {
+  position: relative;
+  background-color: #000000;
+  color: #FFFFFF;
+  bottom: 195px;
+  width: 150px;
+  left: 1380px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+.gerencia .divSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -6px;
+  background-color: rgba(192, 192, 192, 0.9176470588);
+  width: 1925px;
+}
+.gerencia .divSec .formCRUD {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gerencia .divSec h1 {
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  font-family: "Numans";
+  font-size: 35px;
+}
+.gerencia .divSec .botoes {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 786px;
+  width: 700px;
+  padding-left: 20px;
+  margin-top: 15px;
+  background-color: rgba(192, 192, 192, 0.9176470588);
+}
+.gerencia .divSec .botoes label {
+  font-family: "Numans";
+  font-size: 20px;
+  font-weight: 600;
+}
+.gerencia .divSec .botoes .divId {
+  position: relative;
+  top: 50px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.gerencia .divSec .botoes .divId .idBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -8px;
+  left: 36px;
+  width: 300px;
+  height: 100%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+}
+.gerencia .divSec .botoes .divNome {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.gerencia .divSec .botoes .divNome .nomeBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -8px;
+  left: 16px;
+  width: 300px;
+  height: 100%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+}
+.gerencia .divSec .botoes .divDescricao {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.gerencia .divSec .botoes .divDescricao .descricaoBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -5px;
+  width: 300px;
+  height: 100%;
+  left: -4px;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+}
+.gerencia .divSec .botoes .divImagem {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.gerencia .divSec .botoes .divImagem .imagemBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -5px;
+  width: 300px;
+  height: 100%;
+  left: 7px;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  border: none;
+}
+.gerencia .divSec .botoes .divPreco {
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+  gap: 40px;
+}
+.gerencia .divSec .botoes .divPreco .precoBtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -5px;
+  width: 300px;
+  left: 20px;
+  height: 100%;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+}
+.gerencia .divSec .botoes .divCategoria {
+  position: relative;
+  top: 40px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.gerencia .divSec .botoes .divCategoria .categoriaBtn {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  top: -5px;
+  font-family: "Numans";
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+}
+.gerencia .divSec .botoes .botoesSalvar {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.gerencia .divSec .botoes .botoesSalvar .salvar {
+  background: #37C23D;
+  border-radius: 40px;
+  position: relative;
+  width: 130px;
+  height: 37px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.gerencia .divSec .botoes .botoesSalvar .cancelar {
+  background: #D81A1A;
+  border-radius: 40px;
+  position: relative;
+  width: 130px;
+  height: 37px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.gerencia .divSec .botoes .botoesSalvar .alterar {
+  background: #1a1dd8;
+  border-radius: 40px;
+  position: relative;
+  width: 130px;
+  height: 37px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.gerencia .rodape {
+  width: 1927px;
+  height: 88px;
+  margin-left: -7px;
+  background-color: #000000;
+  color: white;
+}
+.gerencia .rodape h1 {
+  width: 100px;
+  position: relative;
+  left: 100px;
+}
+
+@media only screen and (max-width: 720px) {
+  .gerencia {
+    background: #1C1C1C;
+    flex-direction: column;
+    display: flex;
+  }
+  .gerencia .divPrinc {
+    background-color: #000000;
+    position: relative;
+    flex-direction: row;
+    height: 79px;
+    margin: -4px;
+    width: 722px;
+  }
+  .gerencia .divPrinc .adminIcon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 550px;
+    top: 15px;
+  }
+  .gerencia .divPrinc .goalStore {
+    position: relative;
+    width: 300px;
+    left: -3px;
+    top: -10px;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+  .gerencia .divPrinc .admin {
+    position: relative;
+    color: #FFFFFF;
+    bottom: 70px;
+    right: 35px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .gerencia .divSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -3px;
+    background-color: rgba(192, 192, 192, 0.9176470588);
+    width: 720px;
+  }
+  .gerencia .divSec h1 {
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    font-size: 20px;
+  }
+  .gerencia .divSec .botoes {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    height: 670px;
+    width: 720px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .gerencia .divSec .botoes label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .gerencia .divSec .botoes .divNome {
+    position: relative;
+    top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .gerencia .divSec .botoes .divNome .nomeBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -6px;
+    width: 450px;
+    height: 150%;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .gerencia .divSec .botoes .divDescricao {
+    position: relative;
+    top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gerencia .divSec .botoes .divDescricao .descricaoBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -4px;
+    width: 450px;
+    height: 150%;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .gerencia .divSec .botoes .divImagem {
+    position: relative;
+    top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  .gerencia .divSec .botoes .divImagem .imagemBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -4px;
+    width: 450px;
+    height: 150%;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .gerencia .divSec .botoes .divPreco {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+    gap: 30px;
+  }
+  .gerencia .divSec .botoes .divPreco .precoBtn {
+    position: relative;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    top: -4px;
+    width: 450px;
+    height: 150%;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .gerencia .divSec .botoes .divCategoria {
+    position: relative;
+    top: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gerencia .divSec .botoes .divCategoria .categoriaBtn {
+    position: relative;
+    width: 450px;
+    height: 150%;
+    top: -4px;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .gerencia .divSec .botoes .botoesSalvar {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .gerencia .divSec .botoes .botoesSalvar .salvar {
+    background: #37C23D;
+    border-radius: 30px;
+    position: relative;
+    width: 140px;
+    height: 27px;
+    left: 60px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .gerencia .divSec .botoes .botoesSalvar .cancelar {
+    background: #D81A1A;
+    border-radius: 30px;
+    position: relative;
+    width: 120px;
+    height: 27px;
+    left: 60px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .gerencia .rodape {
+    width: 720px;
+    height: 73px;
+    margin-left: 0;
+  }
+  .gerencia .rodape h1 {
+    width: 70px;
+    position: relative;
+    left: 60px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .gerencia {
+    background: #1C1C1C;
+    flex-direction: column;
+    display: flex;
+  }
+  .gerencia .divPrinc {
+    background-color: #000000;
+    position: relative;
+    flex-direction: row;
+    height: 80px;
+    margin: -3px;
+    width: 431px;
+  }
+  .gerencia .divPrinc .adminIcon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 280px;
+    top: 25px;
+  }
+  .gerencia .divPrinc .goalStore {
+    position: relative;
+    width: 140px;
+    left: 15px;
+    top: 10px;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+  .gerencia .divPrinc .admin {
+    position: relative;
+    text-align: end;
+    color: #FFFFFF;
+    bottom: 35px;
+    right: 25px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .gerencia .divSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -2px;
+    background-color: rgba(192, 192, 192, 0.9176470588);
+    width: 430px;
+  }
+  .gerencia .divSec h1 {
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    font-size: 23px;
+  }
+  .gerencia .divSec .botoes {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    height: 680px;
+    width: 430px;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  .gerencia .divSec .botoes label {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .gerencia .divSec .botoes .divNome {
+    position: relative;
+    top: 15px;
+    gap: 20px;
+  }
+  .gerencia .divSec .botoes .divNome .nomeBtn {
+    position: relative;
+    width: 300px;
+    height: 150%;
+    top: -3px;
+    border-radius: 2%;
+    left: 16px;
+  }
+  .gerencia .divSec .botoes .divDescricao {
+    position: relative;
+    top: 15px;
+    gap: 15px;
+  }
+  .gerencia .divSec .botoes .divDescricao .descricaoBtn {
+    position: relative;
+    width: 300px;
+    height: 150%;
+    top: -3px;
+    border-radius: 2%;
+    left: 3px;
+  }
+  .gerencia .divSec .botoes .divImagem {
+    position: relative;
+    top: 15px;
+    gap: 18px;
+  }
+  .gerencia .divSec .botoes .divImagem .imagemBtn {
+    position: relative;
+    width: 300px;
+    height: 150%;
+    top: -3px;
+    border-radius: 2%;
+    left: 10px;
+  }
+  .gerencia .divSec .botoes .divPreco {
+    position: relative;
+    top: 15px;
+    gap: 20px;
+  }
+  .gerencia .divSec .botoes .divPreco .precoBtn {
+    position: relative;
+    width: 300px;
+    height: 150%;
+    top: -3px;
+    border-radius: 2%;
+    left: 16px;
+  }
+  .gerencia .divSec .botoes .divCategoria {
+    position: relative;
+    top: 15px;
+    gap: 15px;
+  }
+  .gerencia .divSec .botoes .divCategoria .categoriaBtn {
+    position: relative;
+    width: 300px;
+    height: 150%;
+    top: -3px;
+    border-radius: 2%;
+    left: 3px;
+  }
+  .gerencia .divSec .botoes .botoesSalvar {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .gerencia .divSec .botoes .botoesSalvar .salvar {
+    background: #37C23D;
+    border-radius: 25px;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    left: 40px;
+    font-size: 12px;
+  }
+  .gerencia .divSec .botoes .botoesSalvar .cancelar {
+    background: #D81A1A;
+    border-radius: 25px;
+    position: relative;
+    width: 85px;
+    height: 35px;
+    left: 40px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .gerencia .rodape {
+    width: 428px;
+    height: 64px;
+    margin-left: 0;
+  }
+  .gerencia .rodape h1 {
+    width: 60px;
+    position: relative;
+    font-size: 24px;
+    left: 30px;
+  }
+}/*# sourceMappingURL=Styles.css.map */

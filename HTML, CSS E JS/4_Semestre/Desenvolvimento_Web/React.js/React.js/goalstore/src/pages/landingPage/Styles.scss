@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.landingPage {
+
+    .telaEsquerda {
+        background-color: #cc1f1f;
+        position: absolute;
+        height: 100%;
+        width: 45%;
+        z-index: 1;
+
+        .goalStore {
+            margin: 5%;
+            width: 900px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 130px;
+            letter-spacing: 10px;
+
+            color: #1C1D21;
+
+        }
+
+        .imagem1 {
+            position: absolute;
+            top: 30%;
+            left: -1%;
+            height: 70%;
+        }
+
+    }
+
+    .telaDireita {
+        background-color: #c0c0c0ea;
+        position: absolute;
+        height: 100%;
+        width: 54.8%;
+        right: 0%;
+        z-index: 0;
+
+
+        .imagem2 {
+            position: relative;
+            width: 45%;
+            left: 28%;
+
+
+        }
+
+        h2 {position: relative;
+            margin: 3%;
+            font-family: 'Poppins';
+            font-style: italic;
+            font-weight: 600;
+            font-size: 65px;
+            letter-spacing: 10px;
+            position: relative;
+            width: 850px;
+            left: 5%;
+            color: #1C1D21;
+        }
+
+        p {
+            margin: 2%;
+            padding: 0%;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            letter-spacing: 5px;
+            width: 1000px;
+
+            color: #1C1D21;
+        }
+
+        button {
+
+            height: 4%;
+            width: 350px;
+            left: 40%;
+            top: 94%;
+            background: rgba(255, 0, 0, 0.81);
+            border-radius: 100px;
+
+            filter: drop-shadow(4px 4px 50px rgba(0, 0, 0, 0.25));
+
+            position: absolute;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 220%;
+            color: #FFFFFF;
+
+            border: 1px solid #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .landingPage {
+
+        .telaEsquerda {
+            width: 40%;
+
+
+            .goalStore {
+                margin: 2%;
+                font-size: 80px;
+            }
+
+
+            .imagem1 {
+                top: 377px;
+                max-height: 450px;
+                width: 113%;
+            }
+        }
+
+        .telaDireita {
+            width: 60%;
+
+            .imagem2 {
+                margin: 15px;
+            }
+
+            h2 {
+                width: 398px;
+                font-size: 33px;
+            }
+
+            p {
+                margin-top: 30px;
+                font-size: 18px;
+                
+            }
+
+            button {
+                bottom: -15px;
+                left: 150px;
+                position: relative;
+                height: 4%;
+                width: 40%;
+
+                a {
+                    font-size: 23px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .landingPage {
+        display: flex;
+        flex-direction: column;
+
+        .telaEsquerda {
+            position: relative;
+            width: 129.5%;
+            height: 150px;
+            margin: -1%;
+
+            .goalStore {
+                padding: 25px;
+                display: flex;
+                justify-content: center;
+                margin: 1%;
+                font-size: 65px;
+
+            }
+
+            .imagem1 {
+                display: none;
+            }
+        }
+
+        .telaDireita {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            margin-top: 10px;
+            height: 800px;
+            width: 123.5%;
+
+            .imagem2 {
+                display: none;
+            }
+
+            h2 {
+                width: 420px;
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 20px;
+                margin-top: 50px;
+                width: 400px;
+            }
+
+            button {
+                position: relative;
+                top: 75px;
+                height: 35px;
+                width: 140px;
+
+            }
+        }
+    }
+}

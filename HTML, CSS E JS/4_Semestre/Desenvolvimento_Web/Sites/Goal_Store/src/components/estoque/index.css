@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;900&family=NTR&family=Numans&family=Odor+Mean+Chey&family=Poppins:ital,wght@1,700&display=swap");
+body {
+  background: #1C1C1C;
+  flex-direction: column;
+  display: flex;
+}
+body .divPrinc {
+  background-color: #000000;
+  position: relative;
+  flex-direction: row;
+  height: 100px;
+  margin: -8px;
+}
+body .divPrinc .adminIcon {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  left: 1515px;
+  top: 25px;
+}
+body .divPrinc .goalStore {
+  position: relative;
+  width: 458px;
+  left: 58px;
+  bottom: 30px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 104px;
+  text-align: center;
+  color: #FFFFFF;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+}
+body .divPrinc .admin {
+  position: relative;
+  text-align: end;
+  color: #FFFFFF;
+  bottom: 150px;
+  right: 175px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+}
+body .divSec {
+  height: 787px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -6px;
+  background-color: rgba(192, 192, 192, 0.9176470588);
+}
+body .divSec .pesquisa {
+  font-family: "NTR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  box-sizing: border-box;
+  position: absolute;
+  width: 503px;
+  height: 45px;
+  left: 450px;
+  top: 190px;
+  padding-left: 60px;
+  background: #FFFFFF;
+  border: 8px solid #FFFFFF;
+  border-radius: 50px;
+}
+body .divSec .imgLupa {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  left: 460px;
+  top: 105px;
+}
+body .divSec .tabela {
+  margin-top: 150px;
+  width: 1919px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .divSec .tabela .disponivel {
+  background: #37C23D;
+  border-radius: 40px;
+  position: relative;
+  width: 130px;
+  height: 37px;
+  left: 76px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+body .divSec .tabela .esgotado {
+  background: #D81A1A;
+  border-radius: 40px;
+  position: relative;
+  width: 130px;
+  height: 37px;
+  left: 76px;
+  font-family: "Odor Mean Chey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+body .divSec .tabela tr:hover {
+  background-color: #189943;
+}
+body .divSec .tabela td {
+  width: 300px;
+  height: 30px;
+}
+body .divSec .tabela table {
+  height: 550px;
+  width: 1050px;
+  box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+}
+body .divSec .tabela tr:nth-child(even) {
+  background-color: rgba(17, 43, 129, 0.9921568627);
+}
+body .divSec h1 {
+  position: absolute;
+  left: 60px;
+  top: 120px;
+  font-family: "Numans";
+  font-size: 35px;
+}
+
+.rodape {
+  width: 1919px;
+  height: 88px;
+  margin-left: -7px;
+  background-color: #000000;
+  color: white;
+}
+.rodape h1 {
+  width: 100px;
+  position: relative;
+  left: 100px;
+}
+
+@media only screen and (max-width: 720px) {
+  body .divPrinc {
+    height: -10%;
+    margin-top: -5%;
+  }
+  body .divPrinc .adminIcon {
+    width: 45px;
+    height: 45px;
+    left: 550px;
+    top: 40px;
+  }
+  body .divPrinc .goalStore {
+    width: 230px;
+    left: 30px;
+    bottom: 17px;
+    font-size: 40px;
+  }
+  body .divPrinc .admin {
+    bottom: 110px;
+    right: 20px;
+    font-size: 30px;
+  }
+  body .divSec {
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(192, 192, 192, 0.9176470588);
+  }
+  body .divSec h1 {
+    top: 80px;
+  }
+  body .divSec .pesquisa {
+    width: 300px;
+    top: 163px;
+    left: 250px;
+    padding-left: 45px;
+    padding-right: 20px;
+  }
+  body .divSec .imgLupa {
+    left: 260px;
+  }
+  body .divSec .tabela {
+    top: -100px;
+    width: 550px;
+    left: 100px;
+  }
+  body .divSec .tabela table {
+    height: 400px;
+  }
+  body .divSec .tabela .disponivel {
+    left: 25px;
+  }
+  body .divSec .tabela .esgotado {
+    left: 25px;
+  }
+  body .rodape {
+    width: 720px;
+  }
+  body .rodape h1 {
+    left: 40px;
+    top: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body .divPrinc {
+    height: 75px;
+    width: 420px;
+    margin-top: -2%;
+  }
+  body .divPrinc .adminIcon {
+    width: 35px;
+    height: 35px;
+    left: 278px;
+    top: 30px;
+  }
+  body .divPrinc .goalStore {
+    width: 180px;
+    left: 20px;
+    bottom: 27px;
+    font-size: 29px;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
+  body .divPrinc .admin {
+    bottom: 112px;
+    right: 20px;
+    font-size: 24px;
+  }
+  body .divSec {
+    height: 660px;
+    width: 417px;
+  }
+  body .divSec h1 {
+    top: 80px;
+    left: 30px;
+    font-size: 35px;
+  }
+  body .divSec .pesquisa {
+    height: 40px;
+    width: 300px;
+    top: 191px;
+    left: 65px;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  body .divSec .imgLupa {
+    top: 130px;
+    height: 40px;
+    left: 70px;
+  }
+  body .divSec .tabela {
+    top: -60px;
+    width: 370px;
+    left: 28px;
+  }
+  body .divSec .tabela table {
+    height: 400px;
+  }
+  body .divSec .tabela .disponivel {
+    font-size: 15px;
+    width: 100px;
+    left: 6px;
+    height: 30px;
+  }
+  body .divSec .tabela .esgotado {
+    font-size: 15px;
+    width: 100px;
+    left: 6px;
+    height: 30px;
+  }
+  body .rodape {
+    width: 419px;
+    height: 101px;
+    margin-top: 5px;
+  }
+  body .rodape h1 {
+    font-size: 25px;
+    left: 20px;
+    top: 4px;
+  }
+}/*# sourceMappingURL=index.css.map */
